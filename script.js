@@ -1,3 +1,4 @@
 function mostrarmensaje(){
-  alert("cuida y protege a los amnimales");
+  let mensaje=document.get1ementById(mensaje);
+  
 }
