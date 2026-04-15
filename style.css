@@ -39,3 +39,23 @@ footer{
     padding: 10px;
     margin-top: 20px;
 }
+Button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: color #2ecc77;
+    color:white;
+border:none;
+border-radius:8px;
+cursor: pointer;
+transition: transform 0.1s,background-color 0.35;
+}
+Button:active{
+    transform: scale(0.95);
+    background: color #27ae60;
+}
+#mensaje{
+    diplay:none;
+    opacity:0;
+    transform: translatey (-10px);
+    transition:
+}
