@@ -9,9 +9,9 @@ function mostrarmensaje(){
   },50 );
 
 }
-function mostrarmensaje(){
-  let mensaje=document.getElementById("mensaje");
-  mensaje.innerHTML= "hola mi nombre es luz";
+function mostrarmensaje2(){
+  let mensaje=document.getElementById("mensaje2");
+  mensaje.innerHTML= "La mejor huella para el corazón, son las patitas de un perro";
   mensaje.style.display = "block";
 
   setTimeout( ()=> { 
