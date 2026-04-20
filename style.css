@@ -54,8 +54,10 @@ Button:active{
     background: color #27ae60;
 }
 #mensaje{
-    diplay:none;
+    display:none;
     opacity:0;
     transform: translatey (-10px);
-    transition:
+    transition:a11 0.5s ease;
+    font-weight:bold;
+    color: #2ecc77;margin-top: 10px;
 }
