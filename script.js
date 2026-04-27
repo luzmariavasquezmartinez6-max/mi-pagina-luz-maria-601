@@ -11,7 +11,7 @@ function mostrarmensaje(){
 }
 function mostrarmensaje2(){
   let mensaje=document.getElementById("mensaje2");
-  mensaje.innerHTML= "hola mi nombre e sluz";
+  mensaje.innerHTML= "hola mi nombre es luz";
   mensaje.style.display = "block";
 
   setTimeout( ()=> { 
