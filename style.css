@@ -1,20 +1,20 @@
 h1{
-    color: rgb(0, 255, 242);
+    color: rgb(119, 0, 255);
 }
 body{
      font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color:#f4f4f4;
+    background-color: darkred;
     margin: 0;
     line-height: 1.6;
 }
 header{
     background-color: rgba(155, 28, 180, 0.93) 5o;
-    color: aqua;
+    color: rgb(17, 0, 255);
     text-align: center;
 padding: 30px 20px;
 }
 nav{
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 159);
     text-align: center;
     padding: 12px;
 }
