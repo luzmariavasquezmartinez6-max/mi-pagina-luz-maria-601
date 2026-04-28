@@ -1,5 +1,5 @@
 h1{
-    color: blue;
+    color: rgb(0, 255, 242);
 }
 body{
      font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -8,8 +8,8 @@ body{
     line-height: 1.6;
 }
 header{
-    background-color: rgba(88, 0, 69, 0.93) 5o;
-    color:white;
+    background-color: rgba(155, 28, 180, 0.93) 5o;
+    color: aqua;
     text-align: center;
 padding: 30px 20px;
 }
@@ -19,7 +19,7 @@ nav{
     padding: 12px;
 }
 nav a:hover{
-    color: blueviolet;
+    color: rgba(226, 43, 150, 0.616);
 }
 section{
     background-color: rgb(222, 135, 210);
@@ -33,8 +33,8 @@ img{
     margin: 10px;
 }
 footer{
-    background-color: deeppink;
-    color: darkviolet;
+    background-color: rgb(247, 20, 255);
+    color: rgb(0, 162, 211);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -42,8 +42,8 @@ footer{
 Button{
     padding: 10px 20px;
     font-size: 16px;
-    background: color #2ecc77;
-    color:rgba(255, 255, 255, 0.384);
+    background: color #84d816;
+    color: #2ecc77(255, 255, 255, 0.384);
 border:none;
 border-radius:8px;
 cursor: pointer;
@@ -51,7 +51,7 @@ transition: transform 0.1s,background-color 0.35;
 }
 Button:active{
     transform: scale(0.95);
-    background: color #27ae60;
+    background: color(srgb red green blue) #27ae60;
 }
 #mensaje{
     display:none;
