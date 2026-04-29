@@ -19,7 +19,7 @@ nav{
     padding: 12px;
 }
 nav a:hover{
-    color: rgba(226, 43, 150, 0.616);
+    color: rgba(189, 43, 226, 0.62);
 }
 section{
     background-color: rgb(222, 135, 210);
@@ -34,7 +34,7 @@ img{
 }
 footer{
     background-color: rgba(255, 20, 90, 0);
-    color: rgb(0, 162, 211);
+    color: rgb(21, 0, 211);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -42,8 +42,8 @@ footer{
 Button{
     padding: 10px 20px;
     font-size: 16px;
-    background: color #84d816;
-    color: #2ecc77(255, 255, 255, 0.384);
+    background: color #d81677;
+    color: #afcc2e(255, 255, 255, 0.384);
 border:none;
 border-radius:8px;
 cursor: pointer;
@@ -51,7 +51,7 @@ transition: transform 0.1s,background-color 0.35;
 }
 Button:active{
     transform: scale(0.95);
-    background-color:blueviolet;
+    background-color:rgb(137, 43, 226);
 }
 #mensaje{
     display:none;
@@ -59,5 +59,5 @@ Button:active{
     transform: translatey (-10px);
     transition:a11 0.5s ease;
     font-weight:bold;
-    color: #2ecc77;margin-top: 10px;
+    color: #be5c00;margin-top: 10px;
 }
