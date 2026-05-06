@@ -9,3 +9,15 @@ function mostrarmensaje2() {
     mensaje.innerText = "¡Hola Luz! Bienvenida a tu página web ✨";
     mensaje.classList.add("mostrar");
 }
+const boton = document.getElementById("toggleDark");
+
+boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Cambiar texto del botón
+    if (document.body.classList.contains("dark-mode")) {
+        boton.innerText = "☀️ Modo claro";
+    } else {
+        boton.innerText = "🌙 Modo oscuro";
+    }
+});

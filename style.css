@@ -123,3 +123,38 @@ footer {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+:root {
+    --bg: #f4f6fb;
+    --text: #333;
+    --card: #ffffff;
+    --primary: #4a00e0;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --primary: #bb86fc;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+}
+
+nav {
+    background-color: var(--card);
+}
+
+section {
+    background-color: var(--card);
+}
+
+footer {
+    background-color: var(--primary);
+}
