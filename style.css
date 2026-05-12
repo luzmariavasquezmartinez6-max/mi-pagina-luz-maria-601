@@ -181,6 +181,35 @@ footer {
 }
 
 /* Click */
-.whatsapp-float:active {
+.wh/* ACORDEÓN */
+
+.acordeon {
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.acordeon-btn {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    background: #4a00e0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.acordeon-btn:hover {
+    background: #6a11cb;
+}
+
+.acordeon-contenido {
+    display: none;
+    padding: 15px;
+    background: white;
+    color: #333;
+}atsapp-float:active {
     transform: scale(0.95);
 }
