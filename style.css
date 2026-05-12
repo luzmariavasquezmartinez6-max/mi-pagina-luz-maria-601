@@ -1,19 +1,35 @@
-/* Reset básico */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Tipografía y fondo */
+/* VARIABLES */
+:root {
+    --bg: #f4f6fb;
+    --text: #333;
+    --card: #ffffff;
+    --primary: #4a00e0;
+}
+
+/* MODO OSCURO */
+.dark-mode {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --primary: #bb86fc;
+}
+
+/* BODY */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f6fb;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
     background: linear-gradient(135deg, #4a00e0, #8e2de2);
     color: white;
@@ -21,9 +37,9 @@ header {
     padding: 40px 20px;
 }
 
-/* Navegación */
+/* NAV */
 nav {
-    background-color: #ffffff;
+    background-color: var(--card);
     text-align: center;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -34,16 +50,16 @@ nav a {
     color: #4a00e0;
     margin: 0 15px;
     font-weight: 600;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #8e2de2;
 }
 
-/* Secciones */
+/* SECCIONES */
 section {
-    background-color: white;
+    background-color: var(--card);
     margin: 30px auto;
     padding: 30px;
     width: 85%;
@@ -53,21 +69,21 @@ section {
     text-align: center;
 }
 
-/* Títulos */
+/* TITULOS */
 h1 {
     font-size: 2.5rem;
 }
 
 h2 {
     margin-bottom: 15px;
-    color: #4a00e0;
+    color: var(--primary);
 }
 
 h3 {
     margin: 15px 0;
 }
 
-/* Imágenes */
+/* IMÁGENES */
 img {
     border-radius: 10px;
     margin: 15px 0;
@@ -75,7 +91,7 @@ img {
     height: auto;
 }
 
-/* Botones */
+/* BOTONES */
 button {
     padding: 12px 25px;
     font-size: 16px;
@@ -84,7 +100,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
     margin: 10px 0;
 }
 
@@ -97,16 +113,16 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    background-color: #4a00e0;
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
 
-/* Mensajes con animación */
+/* MENSAJES */
 #mensaje,
 #mensaje2 {
     display: none;
@@ -117,47 +133,22 @@ footer {
     margin-top: 10px;
 }
 
-/* Clase para mostrar mensaje */
+/* CLASE MOSTRAR */
 .mostrar {
     display: block !important;
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-:root {
-    --bg: #f4f6fb;
-    --text: #333;
-    --card: #ffffff;
-    --primary: #4a00e0;
+
+/* BOTÓN MODO OSCURO */
+#toggleDark {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
 }
 
-/* Modo oscuro */
-.dark-mode {
-    --bg: #121212;
-    --text: #f1f1f1;
-    --card: #1e1e1e;
-    --primary: #bb86fc;
-}
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
-
-header {
-    background: var(--primary);
-    color: white;
-}
-
-nav {
-    background-color: var(--card);
-}
-
-section {
-    background-color: var(--card);
-}
-
-footer {
-    background-color: var(--primary);
-}
+/* WHATSAPP */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -171,16 +162,14 @@ footer {
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 1000;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-/* Hover */
 .whatsapp-float:hover {
     background-color: #1ebe5d;
     transform: scale(1.1);
 }
 
-/* Click */
 .whatsapp-float:active {
     transform: scale(0.95);
 }
