@@ -1,14 +1,16 @@
- mostrarmensaje() {
+ function mostrarmensaje() {
     const mensaje = document.getElementById("mensaje");
     mensaje.innerText = "¡Gracias por interesarte en el proyecto!";
     mensaje.classList.add("mostrar");
 }
-function
+
 function mostrarmensaje2() {
     const mensaje = document.getElementById("mensaje2");
     mensaje.innerText = "¡Hola Luz! Bienvenida a tu página web ✨";
     mensaje.classList.add("mostrar");
 }
+
+// MODO OSCURO
 const boton = document.getElementById("toggleDark");
 
 boton.addEventListener("click", () => {
@@ -21,8 +23,8 @@ boton.addEventListener("click", () => {
         boton.innerText = "🌙 Modo oscuro";
     }
 });
-// ACORDEÓN
 
+// ACORDEÓN
 const acordeonBtns = document.querySelectorAll(".acordeon-btn");
 
 acordeonBtns.forEach((btn) => {
