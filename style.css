@@ -5,11 +5,27 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --bg: #f4f6fb;
+    --text: #333;
+    --card: #ffffff;
+    --primary: #4a00e0;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --primary: #bb86fc;
+}
+
 /* Tipografía y fondo */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f6fb;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
 }
 
@@ -23,7 +39,7 @@ header {
 
 /* Navegación */
 nav {
-    background-color: #ffffff;
+    background-color: var(--card);
     text-align: center;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -43,7 +59,7 @@ nav a:hover {
 
 /* Secciones */
 section {
-    background-color: white;
+    background-color: var(--card);
     margin: 30px auto;
     padding: 30px;
     width: 85%;
@@ -60,7 +76,7 @@ h1 {
 
 h2 {
     margin-bottom: 15px;
-    color: #4a00e0;
+    color: var(--primary);
 }
 
 h3 {
@@ -99,14 +115,14 @@ button:active {
 
 /* Footer */
 footer {
-    background-color: #4a00e0;
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
 
-/* Mensajes con animación */
+/* Mensajes */
 #mensaje,
 #mensaje2 {
     display: none;
@@ -117,47 +133,14 @@ footer {
     margin-top: 10px;
 }
 
-/* Clase para mostrar mensaje */
+/* Clase mostrar */
 .mostrar {
     display: block !important;
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-:root {
-    --bg: #f4f6fb;
-    --text: #333;
-    --card: #ffffff;
-    --primary: #4a00e0;
-}
 
-/* Modo oscuro */
-.dark-mode {
-    --bg: #121212;
-    --text: #f1f1f1;
-    --card: #1e1e1e;
-    --primary: #bb86fc;
-}
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
-
-header {
-    background: var(--primary);
-    color: white;
-}
-
-nav {
-    background-color: var(--card);
-}
-
-section {
-    background-color: var(--card);
-}
-
-footer {
-    background-color: var(--primary);
-}
+/* Botón flotante WhatsApp */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -174,15 +157,16 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Hover */
 .whatsapp-float:hover {
     background-color: #1ebe5d;
     transform: scale(1.1);
 }
 
-/* Click */
-.wh/* ACORDEÓN */
+.whatsapp-float:active {
+    transform: scale(0.95);
+}
 
+/* ACORDEÓN */
 .acordeon {
     margin: 15px 0;
     border-radius: 8px;
@@ -210,6 +194,4 @@ footer {
     padding: 15px;
     background: white;
     color: #333;
-}atsapp-float:active {
-    transform: scale(0.95);
 }
