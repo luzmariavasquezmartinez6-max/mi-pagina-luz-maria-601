@@ -1,11 +1,17 @@
-/* Reset básico */
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variables */
+/* =========================
+   VARIABLES
+========================= */
+
 :root {
     --bg: #f4f6fb;
     --text: #333;
@@ -13,7 +19,10 @@
     --primary: #4a00e0;
 }
 
-/* Modo oscuro */
+/* =========================
+   MODO OSCURO
+========================= */
+
 .dark-mode {
     --bg: #121212;
     --text: #f1f1f1;
@@ -21,7 +30,10 @@
     --primary: #bb86fc;
 }
 
-/* Tipografía y fondo */
+/* =========================
+   BODY
+========================= */
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--bg);
@@ -29,7 +41,10 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
+
 header {
     background: linear-gradient(135deg, #4a00e0, #8e2de2);
     color: white;
@@ -37,7 +52,10 @@ header {
     padding: 40px 20px;
 }
 
-/* Navegación */
+/* =========================
+   NAVEGACIÓN
+========================= */
+
 nav {
     background-color: var(--card);
     text-align: center;
@@ -57,7 +75,10 @@ nav a:hover {
     color: #8e2de2;
 }
 
-/* Secciones */
+/* =========================
+   SECCIONES
+========================= */
+
 section {
     background-color: var(--card);
     margin: 30px auto;
@@ -69,7 +90,10 @@ section {
     text-align: center;
 }
 
-/* Títulos */
+/* =========================
+   TÍTULOS
+========================= */
+
 h1 {
     font-size: 2.5rem;
 }
@@ -83,7 +107,10 @@ h3 {
     margin: 15px 0;
 }
 
-/* Imágenes */
+/* =========================
+   IMÁGENES
+========================= */
+
 img {
     border-radius: 10px;
     margin: 15px 0;
@@ -91,7 +118,10 @@ img {
     height: auto;
 }
 
-/* Botones */
+/* =========================
+   BOTONES
+========================= */
+
 button {
     padding: 12px 25px;
     font-size: 16px;
@@ -113,7 +143,10 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     background-color: var(--primary);
     color: white;
@@ -122,7 +155,10 @@ footer {
     margin-top: 30px;
 }
 
-/* Mensajes */
+/* =========================
+   MENSAJES
+========================= */
+
 #mensaje,
 #mensaje2 {
     display: none;
@@ -133,14 +169,16 @@ footer {
     margin-top: 10px;
 }
 
-/* Clase mostrar */
 .mostrar {
     display: block !important;
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
-/* Botón flotante WhatsApp */
+/* =========================
+   WHATSAPP
+========================= */
+
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -166,7 +204,10 @@ footer {
     transform: scale(0.95);
 }
 
-/* ACORDEÓN */
+/* =========================
+   ACORDEÓN
+========================= */
+
 .acordeon {
     margin: 15px 0;
     border-radius: 8px;

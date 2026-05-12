@@ -1,109 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi primera pagina web</title>
-  <button id="toggleDark">🌙 Modo oscuro</button>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Mi Página Personal</h1>
-  </header>
 
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#pec">Proyecto PEC</a>
-  </nav>
+    <header>
+        <h1>Mi Página Web</h1>
+        <p>Bienvenida Luz ✨</p>
+    </header>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p id="mensaje2" style="display:none;"></p>
-    <button onclick="mostrarmensaje2()">mostrar mensaje</button>
-    <img src="img/img5.png" alt="tarjeta digital" width="350" height="200" />
-    <p>Hola, mi nombre es luz.</p>
+    <!-- BOTÓN MODO OSCURO -->
+    <div style="text-align:center; margin:20px;">
+        <button id="toggleDark">🌙 Modo oscuro</button>
+    </div>
 
-    <p>Soy estudiante en el CECYCTEO-35.</p>
+    <section>
+        <h2>Mensajes</h2>
 
-    <p>Me gusta la tecnología y aprender sobre computación.</p>
+        <button onclick="mostrarmensaje()">
+            Mostrar mensaje 1
+        </button>
 
-    <img src="img/img2.png" alt="banner" width="350" height="200">
-  </section>
+        <p id="mensaje"></p>
 
-  <section id="pec">
-    <h2>Proyecto Escolar Comunitario</h2>
-    <p id="mensaje" style="display:none;"></p>
-    <button onclick="mostrarmensaje()">mostrar mensaje</button>
-    <h3>Huellas: cuidado animal y salud comunitaria</h3>
-    <img src="img/img4.jpg" alt="perro del proyecto huellas" width="350" height="200" >
-    <p>
-      Este proyecto busca promover el cuidado responsable de los perros en la
-      comunidad de San Antonino el Alto.
-    </p>
+        <button onclick="mostrarmensaje2()">
+            Mostrar mensaje 2
+        </button>
 
-    <p>
-      La problemática principal es la presencia de perros en la vía pública,
-      muchos de ellos sin esterilizar o sin vacunas.
-    </p>
+        <p id="mensaje2"></p>
+    </section>
 
-    <p>
-      A través de este proyecto se busca crear conciencia sobre el bienestar
-      animal y la salud comunitaria.
-    </p>
-  </section>
-  <footer>
-    <p>
-   luz maria vasquez 2026
-    </p>
-  </footer>
-  <script src="script.js"></script>
+    <!-- ACORDEÓN -->
+    <section>
+
+        <div class="acordeon">
+
+            <button class="acordeon-btn">
+                ¿Qué es HTML?
+            </button>
+
+            <div class="acordeon-contenido">
+                <p>
+                    HTML es el lenguaje para crear páginas web.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="acordeon">
+
+            <button class="acordeon-btn">
+                ¿Qué es CSS?
+            </button>
+
+            <div class="acordeon-contenido">
+                <p>
+                    CSS sirve para dar estilos y diseño.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
 </body>
-<a href="https://wa.me/2204575697" 
-   class="whatsapp-float" 
-   target="_blank">
-   💬
-</a>
-<section id="faq">
-  <h2>Preguntas frecuentes</h2>
-
-  <div class="acordeon">
-    <button class="acordeon-btn">
-      ¿Qué es el proyecto Huellas?
-    </button>
-
-    <div class="acordeon-contenido">
-      <p>
-        Es un proyecto que promueve el cuidado responsable de los perros
-        y la salud comunitaria.
-      </p>
-    </div>
-  </div>
-
-  <div class="acordeon">
-    <button class="acordeon-btn">
-      ¿Por qué es importante esterilizar?
-    </button>
-
-    <div class="acordeon-contenido">
-      <p>
-        Ayuda a controlar la población animal y evita el abandono.
-      </p>
-    </div>
-  </div>
-
-  <div class="acordeon">
-    <button class="acordeon-btn">
-      ¿Cómo puedo ayudar?
-    </button>
-
-    <div class="acordeon-contenido">
-      <p>
-        Puedes cuidar a tus mascotas, vacunarlas y promover el respeto animal.
-      </p>
-    </div>
-  </div>
-
-</section>
+</html>
