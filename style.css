@@ -1,50 +1,19 @@
-/* =========================
-   RESET
-========================= */
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =========================
-   VARIABLES
-========================= */
-
-:root {
-    --bg: #f4f6fb;
-    --text: #333;
-    --card: #ffffff;
-    --primary: #4a00e0;
-}
-
-/* =========================
-   MODO OSCURO
-========================= */
-
-.dark-mode {
-    --bg: #121212;
-    --text: #f1f1f1;
-    --card: #1e1e1e;
-    --primary: #bb86fc;
-}
-
-/* =========================
-   BODY
-========================= */
-
+/* Tipografía y fondo */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: #f4f6fb;
+    color: #333;
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-
+/* Header */
 header {
     background: linear-gradient(135deg, #4a00e0, #8e2de2);
     color: white;
@@ -52,12 +21,9 @@ header {
     padding: 40px 20px;
 }
 
-/* =========================
-   NAVEGACIÓN
-========================= */
-
+/* Navegación */
 nav {
-    background-color: var(--card);
+    background-color: #ffffff;
     text-align: center;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -75,12 +41,9 @@ nav a:hover {
     color: #8e2de2;
 }
 
-/* =========================
-   SECCIONES
-========================= */
-
+/* Secciones */
 section {
-    background-color: var(--card);
+    background-color: white;
     margin: 30px auto;
     padding: 30px;
     width: 85%;
@@ -90,27 +53,21 @@ section {
     text-align: center;
 }
 
-/* =========================
-   TÍTULOS
-========================= */
-
+/* Títulos */
 h1 {
     font-size: 2.5rem;
 }
 
 h2 {
     margin-bottom: 15px;
-    color: var(--primary);
+    color: #4a00e0;
 }
 
 h3 {
     margin: 15px 0;
 }
 
-/* =========================
-   IMÁGENES
-========================= */
-
+/* Imágenes */
 img {
     border-radius: 10px;
     margin: 15px 0;
@@ -118,10 +75,7 @@ img {
     height: auto;
 }
 
-/* =========================
-   BOTONES
-========================= */
-
+/* Botones */
 button {
     padding: 12px 25px;
     font-size: 16px;
@@ -143,22 +97,16 @@ button:active {
     transform: scale(0.95);
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/* Footer */
 footer {
-    background-color: var(--primary);
+    background-color: #4a00e0;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
 
-/* =========================
-   MENSAJES
-========================= */
-
+/* Mensajes con animación */
 #mensaje,
 #mensaje2 {
     display: none;
@@ -169,16 +117,47 @@ footer {
     margin-top: 10px;
 }
 
+/* Clase para mostrar mensaje */
 .mostrar {
     display: block !important;
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+:root {
+    --bg: #f4f6fb;
+    --text: #333;
+    --card: #ffffff;
+    --primary: #4a00e0;
+}
 
-/* =========================
-   WHATSAPP
-========================= */
+/* Modo oscuro */
+.dark-mode {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --primary: #bb86fc;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
 
+header {
+    background: var(--primary);
+    color: white;
+}
+
+nav {
+    background-color: var(--card);
+}
+
+section {
+    background-color: var(--card);
+}
+
+footer {
+    background-color: var(--primary);
+}
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -195,44 +174,13 @@ footer {
     transition: all 0.3s ease;
 }
 
+/* Hover */
 .whatsapp-float:hover {
     background-color: #1ebe5d;
     transform: scale(1.1);
 }
 
+/* Click */
 .whatsapp-float:active {
     transform: scale(0.95);
-}
-
-/* =========================
-   ACORDEÓN
-========================= */
-
-.acordeon {
-    margin: 15px 0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.acordeon-btn {
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 16px;
-    background: #4a00e0;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.acordeon-btn:hover {
-    background: #6a11cb;
-}
-
-.acordeon-contenido {
-    display: none;
-    padding: 15px;
-    background: white;
-    color: #333;
 }
