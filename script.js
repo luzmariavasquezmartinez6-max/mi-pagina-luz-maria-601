@@ -148,3 +148,20 @@ function validarCorreo(correo) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
         .test(correo);
 }
+/* ========================= */
+/* ACORDEÓN FAQ */
+/* ========================= */
+
+const acordeones =
+    document.querySelectorAll(".acordeon-btn");
+
+acordeones.forEach(boton => {
+
+    boton.addEventListener("click", () => {
+
+        const acordeon =
+            boton.parentElement;
+
+        acordeon.classList.toggle("activo");
+    });
+});
